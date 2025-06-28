@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 @font-face {
     font-family: 'Outfit';
@@ -24,12 +24,165 @@
     --font-family-titles: 'Young Serif', serif;
 }
 
+/* body settings */
+body {
+    background-color: var(--color-body);
+}
+
+/* main settings */
+main {
+    background-color: var(--color-background);
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    font-family: var(--font-family-text);
+}
+
+main > img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+/* article settings */
+article {
+    background-color: var(--color-background);
+    font-family: var(--font-family-text);
+    color: var(--color-text);
+}
+
+article h1 {
+    font-family: var(--font-family-titles);
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--color-main-title);
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+article h2 {
+    font-family: var(--font-family-titles);
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--color-secondary-titles);
+    margin: 0 0 0.5rem 0;
+}
+
+article hr {
+    border: none;
+    height:0.1rem;
+    background-color: var(--color-hr);
+    margin: 2rem 0;
+}
+
+/* preparation-time settings */
+.preparation-time {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    background-color: var(--color-background-preparation-time);
+    border-radius: 0.5rem;
+}
+
+.preparation-time h2 {
+    color: var(--color-preparation-time-title);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-family-text);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.preparation-time ul {
+    padding-left: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.preparation-time li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+}
+
+/* ingredients settings */
+.ingredients h2 {
+    margin-bottom: 1.5rem;
+}
+
+.ingredients ul {
+    padding-left: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.ingredients li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+}
+
+/* instructions settings */
+.instructions h2 {
+    margin-bottom: 1.5rem;
+}
+
+.instructions ol {
+    padding-left: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.instructions ol li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+}
+
+.instructions ol li::marker {
+    color: var(--color-secondary-titles);
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/* nutrition settings */
+.nutrition h2 {
+    margin-bottom: 1.5rem;
+}
+
+.nutrition > p {
+    margin-bottom: 1.5rem;
+}
+
+.nutrition div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nutrition div p strong {
+    color: var(--color-secondary-titles);
+}
+
+.nutrition hr {
+    margin: 0.8rem 0;
+}
+
 @media screen and (max-width: 400px) {
+    /* body settings */
+   body {
+        background-color: var(--color-body);
+        margin: 0;
+        padding: 0;
+    }
+
     /* main settings */
+    main {
+        background-color: var(--color-background);
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        max-width: 100vw;
+    }
+
     main > img {
         display: block;
         width: 100%;
         max-width: 100vw;
+        border-radius: 0;
     }
 
     /* article settings */
@@ -129,145 +282,6 @@
         margin-bottom: 2rem;
     }
 
-    .nutrition h2 {
-        margin-bottom: 1.5rem;
-    }
-
-    .nutrition > p {
-        margin-bottom: 1.5rem;
-    }
-
-    .nutrition div {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .nutrition div p strong {
-        color: var(--color-secondary-titles);
-    }
-
-    .nutrition hr {
-        margin: 0.8rem 0;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    /* body settings */
-    body {
-        background-color: var(--color-body);
-    }
-
-    /* main settings */
-    main {
-        background-color: var(--color-background);
-        max-width: 800px;
-        margin: 4rem auto;
-        padding: 2.5rem;
-        border-radius: 2rem;
-        font-family: var(--font-family-text);
-    }
-
-    main > img {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        border-radius: 1rem;
-    }
-
-    /* article settings */
-    article {
-        background-color: var(--color-background);
-        font-family: var(--font-family-text);
-        color: var(--color-text);
-    }
-
-    article h1 {
-        font-family: var(--font-family-titles);
-        font-weight: 500;
-        font-size: 2.5rem;
-        color: var(--color-main-title);
-        margin: 1.5rem 0 1.5rem 0;
-    }
-
-    article h2 {
-        font-family: var(--font-family-titles);
-        font-weight: 500;
-        font-size: 1.8rem;
-        color: var(--color-secondary-titles);
-        margin: 0 0 0.5rem 0;
-    }
-
-    article hr {
-        border: none;
-        height:0.1rem;
-        background-color: var(--color-hr);
-        margin: 2rem 0;
-    }
-
-    /* preparation-time settings */
-    .preparation-time {
-        margin: 2rem 0;
-        padding: 1.5rem 2rem;
-        background-color: var(--color-background-preparation-time);
-        border-radius: 0.5rem;
-    }
-
-    .preparation-time h2 {
-        color: var(--color-preparation-time-title);
-        margin-bottom: 0.5rem;
-        font-family: var(--font-family-text);
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-
-    .preparation-time ul {
-        padding-left: 1.5rem;
-        line-height: 1.5rem;
-    }
-
-    .preparation-time li {
-        margin: 0.5rem 0;
-        padding-left: 1rem;
-    }
-
-    /* ingredients settings */
-    .ingredients h2 {
-        margin-bottom: 1.5rem;
-    }
-
-    .ingredients ul {
-        padding-left: 1.5rem;
-        line-height: 1.5rem;
-    }
-
-    .ingredients li {
-        margin: 0.5rem 0;
-        padding-left: 1rem;
-    }
-
-    /* instructions settings */
-    .instructions h2 {
-        margin-bottom: 1.5rem;
-    }
-
-    .instructions ol {
-        padding-left: 1.5rem;
-        line-height: 1.5rem;
-    }
-
-    .instructions ol li {
-        margin: 0.5rem 0;
-        padding-left: 1rem;
-    }
-
-    .instructions ol li::marker {
-        color: var(--color-secondary-titles);
-        font-weight: 600;
-        font-size: 1.1em;
-    }
-
-    /* nutrition settings */
     .nutrition h2 {
         margin-bottom: 1.5rem;
     }
