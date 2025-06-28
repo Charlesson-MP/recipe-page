@@ -24,7 +24,7 @@
     --font-family-titles: 'Young Serif', serif;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     /* main settings */
     main > img {
         display: block;
