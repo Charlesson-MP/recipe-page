@@ -34,7 +34,7 @@ recipe-page/
 🚀 Getting Started
 
 1. Clone or download this repository.
-2. Open "index.html" in your browser.
+2. Open 'index.html' in your browser.
 
 No additional dependencies or build tools are required.
 
@@ -47,7 +47,7 @@ No additional dependencies or build tools are required.
 
 🙏 Acknowledgments
 
-- "Frontend Mentor" (https://www.frontendmentor.io/) for providing the challenge.
+- [Frontend Mentor](https://www.frontendmentor.io/) for providing the challenge.
 - Recipe content and assets provided as part of the original challenge.
 
 Developed by Charlesson
