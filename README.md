@@ -15,7 +15,7 @@ The page features an omelette recipe, including ingredients, preparation instruc
 
 📂 Project Structure
 
-```
+```text
 recipe-page/
 ├── index.html
 ├── README.md
